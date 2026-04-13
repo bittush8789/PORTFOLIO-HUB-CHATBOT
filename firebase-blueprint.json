@@ -1,0 +1,43 @@
+{
+  "entities": {
+    "Blog": {
+      "title": "Blog",
+      "description": "A blog post entry",
+      "type": "object",
+      "properties": {
+        "title": { "type": "string", "description": "The title of the post" },
+        "content": { "type": "string", "description": "The markdown content" },
+        "excerpt": { "type": "string", "description": "Short summary" },
+        "category": { "type": "string", "description": "Post category" },
+        "series": { "type": "string", "description": "Series name" },
+        "seriesPart": { "type": "number", "description": "Part number" },
+        "tags": { "type": "array", "items": { "type": "string" } },
+        "image": { "type": "string", "description": "Image URL" },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "authorUid": { "type": "string" }
+      },
+      "required": ["title", "content", "category", "createdAt"]
+    },
+    "User": {
+      "title": "User",
+      "description": "User profile and role",
+      "type": "object",
+      "properties": {
+        "email": { "type": "string" },
+        "role": { "type": "string", "enum": ["admin", "user"] },
+        "displayName": { "type": "string" }
+      },
+      "required": ["email", "role"]
+    }
+  },
+  "firestore": {
+    "/blogs/{blogId}": {
+      "schema": "Blog",
+      "description": "Collection of blog posts"
+    },
+    "/users/{userId}": {
+      "schema": "User",
+      "description": "User roles and metadata"
+    }
+  }
+}

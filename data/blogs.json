@@ -1,0 +1,22 @@
+[
+  {
+    "id": "1",
+    "title": "Welcome to my Blog",
+    "content": "This is the first post on my new blog. I'll be sharing my thoughts on technology, design, and life.\n\n## Why I started this blog\nI wanted a place to document my journey as a developer and designer. \n\n### What to expect\n- Tutorials\n- Case studies\n- Personal reflections",
+    "excerpt": "Welcome to my new blog where I share my journey as a developer.",
+    "category": "General",
+    "tags": ["welcome", "intro"],
+    "image": "https://picsum.photos/seed/blog1/800/400",
+    "createdAt": "2026-04-10T10:00:00.000Z"
+  },
+  {
+    "id": "2",
+    "title": "The Beauty of Minimalist Design",
+    "content": "Minimalism is not just about less; it's about the right amount of everything.\n\n> \"Design is not just what it looks like and feels like. Design is how it works.\" - Steve Jobs\n\nIn this post, we explore how minimalist design can improve user experience by reducing cognitive load.",
+    "excerpt": "Exploring the principles of minimalist design and its impact on UX.",
+    "category": "Design",
+    "tags": ["minimalism", "ux"],
+    "image": "https://picsum.photos/seed/blog2/800/400",
+    "createdAt": "2026-04-11T12:00:00.000Z"
+  }
+]
